@@ -102,6 +102,10 @@ export default function Home() {
           <div className="h2 text-center">
             Your balance: {formatEther(balance || BigInt(0)).toString()}
           </div>
+          <div>
+            Is browser minipay enabled:{" "}
+            {window.ethereum.isMiniPay ? "Yes" : "No"}
+          </div>
         </>
       ) : (
         <div>No Wallet Connected</div>
