@@ -1,0 +1,30 @@
+{
+    "name": "celo-demo",
+    "version": "1.0.0",
+    "description": "Custom Celo Composer project.",
+    "private": true,
+    "author": "Celo",
+    "license": "MIT",
+    "scripts": {
+        "react-app:dev": "yarn workspace @celo-demo/react-app dev",
+        "react-app:build": "yarn workspace @celo-demo/react-app build",
+        "react-app:start": "yarn workspace @celo-demo/react-app start",
+        "react-app:lint": "yarn workspace @celo-demo/react-app lint",
+        "hardhat:compile": "yarn workspace @celo-demo/hardhat compile"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/celo-org/celo-composer.git"
+    },
+    "bugs": {
+        "url": "https://github.com/celo-org/celo-composer/issues"
+    },
+    "homepage": "https://github.com/celo-org/celo-composer/blob/main/README.md",
+    "workspaces": [
+        "packages/*"
+    ],
+    "keywords": [
+        "celo-composer",
+        "celo"
+    ]
+}
