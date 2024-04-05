@@ -119,7 +119,7 @@ export default function Home() {
               )}
             </p>
           )}
-          <div className="w-full mt-7 mb-3">
+          <div className="w-full mt-7 mb-3 px-4">
             <button
               onClick={() => sendCUSD(address, "0.01")}
               className="w-full font-bold border border-black bg-colors-secondary rounded-2xl py-3 flex justify-center items-center"
@@ -127,8 +127,11 @@ export default function Home() {
               Send 0.01 cUSD to your own address
             </button>
           </div>
-          <div className="w-full font-bold border border-black bg-colors-secondary rounded-2xl py-3 flex justify-center items-center">
-            <button onClick={signTransaction} className="w-full">
+          <div className="w-full mb-3 px-4">
+            <button
+              onClick={signTransaction}
+              className="w-full font-bold border border-black bg-colors-secondary rounded-2xl py-3 flex justify-center items-center"
+            >
               Sign a Message
             </button>
           </div>
